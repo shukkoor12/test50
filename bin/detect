@@ -1,1 +1,14 @@
-werwer
+#!/usr/bin/env bash
+# -------------------------------------------------------------------
+# Copyright IBM Corp. 2013 All Rights Reserved                      
+# -------------------------------------------------------------------
+# bin/detect <build-dir>
+
+shopt -s nullglob
+files=(*.bac)
+if (( ${#files[@]} > 0 )); then
+	echo "BASIC"
+	exit 0
+else
+	exit 1
+fi
