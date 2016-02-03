@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# -------------------------------------------------------------------
+# Copyright IBM Corp. 2013 All Rights Reserved                      
+# -------------------------------------------------------------------
+# bin/release <build-dir>
+
+cat << EOF
+addons: []
+default_process_types: {
+	web: ./start.sh
+}
+EOF
